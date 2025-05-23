@@ -54,6 +54,10 @@
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>СписокСотрудников</DataPath>
 			<RowPictureDataPath>СписокСотрудников.DefaultPicture</RowPictureDataPath>
+			<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<CommandSet>
+				<ExcludedCommand>Change</ExcludedCommand>
+			</CommandSet>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -95,6 +99,9 @@
 				<ContextMenu name="СписокСотрудниковУправлениеПоискомКонтекстноеМеню" id="45"/>
 				<ExtendedTooltip name="СписокСотрудниковУправлениеПоискомРасширеннаяПодсказка" id="46"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeRowChange">СписокСотрудниковПередНачаломИзменения</Event>
+			</Events>
 			<ChildItems>
 				<LabelField name="СписокСотрудниковпропуск_ИдентификаторПропуска" id="68">
 					<DataPath>СписокСотрудников.пропуск_ИдентификаторПропуска</DataPath>
@@ -126,11 +133,19 @@
 			</ChildItems>
 		</Table>
 		<Table name="ЖурналПосещений" id="82">
+			<TitleLocation>Top</TitleLocation>
 			<ChangeRowSet>false</ChangeRowSet>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>ЖурналПосещений</DataPath>
 			<RowPictureDataPath>ЖурналПосещений.DefaultPicture</RowPictureDataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проходная</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>

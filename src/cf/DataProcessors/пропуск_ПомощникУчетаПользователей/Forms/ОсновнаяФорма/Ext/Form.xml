@@ -8,11 +8,13 @@
 	</Events>
 	<ChildItems>
 		<Table name="СписокПользователей" id="1">
+			<TitleLocation>Top</TitleLocation>
 			<TitleHeight>1</TitleHeight>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>СписокПользователей</DataPath>
 			<RowPictureDataPath>СписокПользователей.DefaultPicture</RowPictureDataPath>
+			<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>

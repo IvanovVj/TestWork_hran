@@ -80,6 +80,7 @@
 			<CommonModule>пропуск_РаботаСКонтролллеромТурникетаВызовСервера</CommonModule>
 			<EventSubscription>пропуск_СправочникПользователиПриЗаписи</EventSubscription>
 			<DefinedType>Подразделение</DefinedType>
+			<DefinedType>пропуск_ИдентификаторПропуска</DefinedType>
 			<Catalog>Пользователи</Catalog>
 			<Catalog>_ДемоПодразделения</Catalog>
 			<Catalog>ГруппыПользователей</Catalog>

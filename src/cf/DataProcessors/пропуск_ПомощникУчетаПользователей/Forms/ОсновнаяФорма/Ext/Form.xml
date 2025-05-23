@@ -11,7 +11,7 @@
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>СписокПользователей</DataPath>
-			<RowPictureDataPath>~СписокПользователей.DefaultPicture</RowPictureDataPath>
+			<RowPictureDataPath>СписокПользователей.DefaultPicture</RowPictureDataPath>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -32,20 +32,20 @@
 					<Button name="СписокПользователейСоздать" id="37">
 						<Type>CommandBarButton</Type>
 						<Representation>PictureAndText</Representation>
-						<CommandName>1:0f8d6d98-2f8b-405a-b8b3-0538e9d95da5</CommandName>
+						<CommandName>Form.Item.СписокПользователей.StandardCommand.Create</CommandName>
 						<ExtendedTooltip name="СписокПользователейСоздатьРасширеннаяПодсказка" id="38"/>
 					</Button>
 					<Button name="СписокПользователейИзменить" id="35">
 						<Type>CommandBarButton</Type>
 						<Representation>PictureAndText</Representation>
-						<CommandName>1:b41f5bbc-ba5d-4888-8cd1-db246a371418</CommandName>
+						<CommandName>Form.Item.СписокПользователей.StandardCommand.Change</CommandName>
 						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 						<ExtendedTooltip name="СписокПользователейИзменитьРасширеннаяПодсказка" id="36"/>
 					</Button>
 					<Button name="СписокПользователейСкопировать" id="39">
 						<Type>CommandBarButton</Type>
 						<Representation>PictureAndText</Representation>
-						<CommandName>1:0ae4bea5-23be-42a7-b69e-97b11b29c453</CommandName>
+						<CommandName>Form.Item.СписокПользователей.StandardCommand.Copy</CommandName>
 						<ExtendedTooltip name="СписокПользователейСкопироватьРасширеннаяПодсказка" id="40"/>
 					</Button>
 					<Button name="ФормаКомандаСгенерироватьИдентификаторПропуска" id="44">
@@ -83,33 +83,33 @@
 			</SearchControlAddition>
 			<ChildItems>
 				<LabelField name="СписокПользователейпропуск_ИдентификаторПропуска" id="41">
-					<DataPath>~СписокПользователей.пропуск_ИдентификаторПропуска</DataPath>
+					<DataPath>СписокПользователей.пропуск_ИдентификаторПропуска</DataPath>
 					<ContextMenu name="СписокПользователейпропуск_ИдентификаторПропускаКонтекстноеМеню" id="42"/>
 					<ExtendedTooltip name="СписокПользователейпропуск_ИдентификаторПропускаРасширеннаяПодсказка" id="43"/>
 				</LabelField>
 				<LabelField name="СписокПользователейНаименование" id="14">
-					<DataPath>~СписокПользователей.Description~СписокПользователей.Наименование</DataPath>
+					<DataPath>СписокПользователей.Description</DataPath>
 					<ContextMenu name="СписокПользователейНаименованиеКонтекстноеМеню" id="15"/>
 					<ExtendedTooltip name="СписокПользователейНаименованиеРасширеннаяПодсказка" id="16"/>
 				</LabelField>
 				<CheckBoxField name="СписокПользователейНедействителен" id="17">
-					<DataPath>~СписокПользователей.Недействителен</DataPath>
+					<DataPath>СписокПользователей.Недействителен</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="СписокПользователейНедействителенКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="СписокПользователейНедействителенРасширеннаяПодсказка" id="19"/>
 				</CheckBoxField>
 				<LabelField name="СписокПользователейПодразделение" id="20">
-					<DataPath>~СписокПользователей.Подразделение</DataPath>
+					<DataPath>СписокПользователей.Подразделение</DataPath>
 					<ContextMenu name="СписокПользователейПодразделениеКонтекстноеМеню" id="21"/>
 					<ExtendedTooltip name="СписокПользователейПодразделениеРасширеннаяПодсказка" id="22"/>
 				</LabelField>
 				<LabelField name="СписокПользователейКомментарий" id="26">
-					<DataPath>~СписокПользователей.Комментарий</DataPath>
+					<DataPath>СписокПользователей.Комментарий</DataPath>
 					<ContextMenu name="СписокПользователейКомментарийКонтекстноеМеню" id="27"/>
 					<ExtendedTooltip name="СписокПользователейКомментарийРасширеннаяПодсказка" id="28"/>
 				</LabelField>
 				<LabelField name="СписокПользователейСсылка" id="46">
-					<DataPath>~СписокПользователей.Ref~СписокПользователей.Ссылка</DataPath>
+					<DataPath>СписокПользователей.Ref</DataPath>
 					<Visible>false</Visible>
 					<ContextMenu name="СписокПользователейСсылкаКонтекстноеМеню" id="47"/>
 					<ExtendedTooltip name="СписокПользователейСсылкаРасширеннаяПодсказка" id="48"/>
@@ -249,12 +249,12 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<UseAlways>
-				<Field>~СписокПользователей.Ref~СписокПользователей.Ссылка</Field>
+				<Field>СписокПользователей.Ref</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>false</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
-				<MainTable>1:579baaa4-6493-4d99-8744-6399757295c7</MainTable>
+				<MainTable>Catalog.Пользователи</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>

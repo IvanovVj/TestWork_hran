@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<DefinedType uuid="53e473c8-0c18-484b-9a7e-0d7c3254aacc">
+		<InternalInfo>
+			<xr:GeneratedType name="DefinedType.Подразделение" category="DefinedType">
+				<xr:TypeId>8f6d22a5-2cd6-43c4-b78c-fd9cf5e826fd</xr:TypeId>
+				<xr:ValueId>84f3f6ca-b500-402a-a0a1-0e73a6576200</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>Подразделение</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>28a25822-2306-409a-a7c8-6f7e42bf25e8</ExtendedConfigurationObject>
+			<Type>
+				<v8:Type>cfg:CatalogRef._ДемоПодразделения</v8:Type>
+			</Type>
+		</Properties>
+	</DefinedType>
+</MetaDataObject>

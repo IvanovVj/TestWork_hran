@@ -71,10 +71,13 @@
 			<StyleItem>ПоясняющийТекст</StyleItem>
 			<CommonPicture>ПиктограммыЭлементов</CommonPicture>
 			<Role>пропуск_ОсновнаяРоль</Role>
+			<CommonTemplate>пропуск_Контроллер</CommonTemplate>
 			<CommonModule>пропуск_ОбновлениеИнформационнойБазы</CommonModule>
 			<CommonModule>пропуск_ПодпискиНаСобытия</CommonModule>
 			<CommonModule>пропуск_Логирование</CommonModule>
 			<CommonModule>пропуск_РаботаСПропусками</CommonModule>
+			<CommonModule>пропуск_РаботаСКонтролллеромТурникетаКлиент</CommonModule>
+			<CommonModule>пропуск_РаботаСКонтролллеромТурникетаВызовСервера</CommonModule>
 			<EventSubscription>пропуск_СправочникПользователиПриЗаписи</EventSubscription>
 			<DefinedType>Подразделение</DefinedType>
 			<Catalog>Пользователи</Catalog>

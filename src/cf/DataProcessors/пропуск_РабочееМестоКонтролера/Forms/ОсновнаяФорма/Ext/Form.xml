@@ -50,6 +50,7 @@
 			<TitleHeight>1</TitleHeight>
 			<ChangeRowSet>false</ChangeRowSet>
 			<Height>4</Height>
+			<SelectionMode>SingleRow</SelectionMode>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>СписокСотрудников</DataPath>
@@ -544,6 +545,7 @@
 					<v8:content>Открыть турникет сотруднику</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Action>КомандаОткрытьТурникетСотруднику</Action>
 		</Command>
 	</Commands>
 </Form>

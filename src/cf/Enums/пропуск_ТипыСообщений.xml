@@ -214,6 +214,30 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="f9f871d6-765e-4225-b8bc-1cbc930e6a88">
+				<Properties>
+					<Name>ОткрытиеТурникета</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открытие турникета</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ee03ef46-b66b-4995-aaa0-b027f7e7c754">
+				<Properties>
+					<Name>ОткрытиеТурникетаСотруднику</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открытие турникета сотруднику</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

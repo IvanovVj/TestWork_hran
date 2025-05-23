@@ -8,6 +8,7 @@
 	</Events>
 	<ChildItems>
 		<Table name="СписокПользователей" id="1">
+			<TitleHeight>1</TitleHeight>
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>СписокПользователей</DataPath>
@@ -105,6 +106,7 @@
 				</LabelField>
 				<LabelField name="СписокПользователейКомментарий" id="26">
 					<DataPath>СписокПользователей.Комментарий</DataPath>
+					<Height>1</Height>
 					<ContextMenu name="СписокПользователейКомментарийКонтекстноеМеню" id="27"/>
 					<ExtendedTooltip name="СписокПользователейКомментарийРасширеннаяПодсказка" id="28"/>
 				</LabelField>
@@ -257,6 +259,16 @@
 				<MainTable>Catalog.Пользователи</MainTable>
 				<ListSettings>
 					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Предопределенный</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Служебный</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
@@ -285,7 +297,7 @@
 			</Type>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>true</DynamicDataRead>
+				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	РегистрСведенийпропус_ИнформационныеСообщения.Идентификатор,
 	РегистрСведенийпропус_ИнформационныеСообщения.ГруппаПользователей,
@@ -319,21 +331,12 @@
 					<dcssch:dataPath>Контекст</dcssch:dataPath>
 					<dcssch:field>Контекст</dcssch:field>
 				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Период</dcssch:dataPath>
-					<dcssch:field>Период</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Пользователь</dcssch:dataPath>
-					<dcssch:field>Пользователь</dcssch:field>
-				</Field>
-				<MainTable>1:b5e85e5c-5d28-4f57-a2a3-6068259a138b</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:item xsi:type="dcsset:FilterItemComparison">
 							<dcsset:left xsi:type="dcscor:Field">ГруппаПользователей</dcsset:left>
-							<dcsset:comparisonType>InList</dcsset:comparisonType>
-							<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.ГруппыПользователей.Операторы</dcsset:right>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.ГруппыПользователей.Операторы1С</dcsset:right>
 						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>

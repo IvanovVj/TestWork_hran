@@ -115,6 +115,18 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="4c3a156f-35d9-4449-8fb5-22a7d43adf3e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Служебный</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>bd0e3bd4-1207-41ea-8dfc-afa8f7d08cc2</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
 			<Form>ФормаЭлемента</Form>
 		</ChildObjects>
 	</Catalog>

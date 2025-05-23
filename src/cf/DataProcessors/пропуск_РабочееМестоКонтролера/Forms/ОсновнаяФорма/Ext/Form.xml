@@ -130,7 +130,7 @@
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>ЖурналПосещений</DataPath>
-			<RowPictureDataPath>~ЖурналПосещений.DefaultPicture</RowPictureDataPath>
+			<RowPictureDataPath>ЖурналПосещений.DefaultPicture</RowPictureDataPath>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -174,23 +174,23 @@
 			</SearchControlAddition>
 			<ChildItems>
 				<LabelField name="ЖурналПосещенийПериод" id="95">
-					<DataPath>~ЖурналПосещений.Period~ЖурналПосещений.Период</DataPath>
+					<DataPath>ЖурналПосещений.Period</DataPath>
 					<Width>6</Width>
 					<ContextMenu name="ЖурналПосещенийПериодКонтекстноеМеню" id="96"/>
 					<ExtendedTooltip name="ЖурналПосещенийПериодРасширеннаяПодсказка" id="97"/>
 				</LabelField>
 				<LabelField name="ЖурналПосещенийСотрудник" id="98">
-					<DataPath>~ЖурналПосещений.Сотрудник</DataPath>
+					<DataPath>ЖурналПосещений.Сотрудник</DataPath>
 					<ContextMenu name="ЖурналПосещенийСотрудникКонтекстноеМеню" id="99"/>
 					<ExtendedTooltip name="ЖурналПосещенийСотрудникРасширеннаяПодсказка" id="100"/>
 				</LabelField>
 				<LabelField name="ЖурналПосещенийИдентификаторПропуска" id="101">
-					<DataPath>~ЖурналПосещений.ИдентификаторПропуска</DataPath>
+					<DataPath>ЖурналПосещений.ИдентификаторПропуска</DataPath>
 					<ContextMenu name="ЖурналПосещенийИдентификаторПропускаКонтекстноеМеню" id="102"/>
 					<ExtendedTooltip name="ЖурналПосещенийИдентификаторПропускаРасширеннаяПодсказка" id="103"/>
 				</LabelField>
 				<CheckBoxField name="ЖурналПосещенийВход" id="104">
-					<DataPath>~ЖурналПосещений.Вход</DataPath>
+					<DataPath>ЖурналПосещений.Вход</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ЖурналПосещенийВходКонтекстноеМеню" id="105"/>
 					<ExtendedTooltip name="ЖурналПосещенийВходРасширеннаяПодсказка" id="106"/>
@@ -369,17 +369,13 @@
 					<dcsset:filter>
 						<dcsset:item xsi:type="dcsset:FilterItemComparison">
 							<dcsset:left xsi:type="dcscor:Field">ГруппаПользователей</dcsset:left>
-							<dcsset:comparisonType>InList</dcsset:comparisonType>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
 							<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.ГруппыПользователей.Контролеры</dcsset:right>
 						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
 					<dcsset:order>
-						<dcsset:item xsi:type="dcsset:OrderItemField">
-							<dcsset:field>Период</dcsset:field>
-							<dcsset:orderType>Desc</dcsset:orderType>
-						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>
@@ -452,7 +448,7 @@
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>false</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
-				<MainTable>1:633fc228-b571-44cc-99a1-5b70dea6249d</MainTable>
+				<MainTable>InformationRegister.пропуск_ЖурналПосещений</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>

@@ -79,6 +79,7 @@
 			<DefinedType>Подразделение</DefinedType>
 			<Catalog>Пользователи</Catalog>
 			<Catalog>_ДемоПодразделения</Catalog>
+			<Catalog>ГруппыПользователей</Catalog>
 			<Enum>пропуск_ТипыСообщений</Enum>
 			<DataProcessor>пропуск_РабочееМестоКонтролера</DataProcessor>
 			<DataProcessor>пропуск_ПомощникУчетаПользователей</DataProcessor>

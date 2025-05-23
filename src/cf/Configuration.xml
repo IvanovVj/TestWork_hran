@@ -76,7 +76,9 @@
 			<CommonModule>пропуск_Логирование</CommonModule>
 			<CommonModule>пропуск_РаботаСПропусками</CommonModule>
 			<EventSubscription>пропуск_СправочникПользователиПриЗаписи</EventSubscription>
+			<DefinedType>Подразделение</DefinedType>
 			<Catalog>Пользователи</Catalog>
+			<Catalog>_ДемоПодразделения</Catalog>
 			<Enum>пропуск_ТипыСообщений</Enum>
 			<DataProcessor>пропуск_РабочееМестоКонтролера</DataProcessor>
 			<DataProcessor>пропуск_ПомощникУчетаПользователей</DataProcessor>

@@ -142,8 +142,9 @@
 			<ChildItems>
 				<LabelDecoration name="НадписьИнформационныеСообщения" id="51">
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>2</Height>
 					<HorizontalStretch>true</HorizontalStretch>
-					<Font bold="true" kind="AutoFont"/>
+					<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -151,11 +152,13 @@
 						</v8:item>
 					</Title>
 					<HorizontalAlign>Center</HorizontalAlign>
-					<BackColor>#1CFF07</BackColor>
+					<VerticalAlign>Center</VerticalAlign>
+					<BackColor>style:ToolTipBackColor</BackColor>
 					<ContextMenu name="НадписьИнформационныеСообщенияКонтекстноеМеню" id="52"/>
 					<ExtendedTooltip name="НадписьИнформационныеСообщенияРасширеннаяПодсказка" id="53"/>
 				</LabelDecoration>
 				<Table name="ИнформационныеСообщения" id="54">
+					<Representation>List</Representation>
 					<ChangeRowSet>false</ChangeRowSet>
 					<UseAlternationRowColor>true</UseAlternationRowColor>
 					<EnableStartDrag>true</EnableStartDrag>
@@ -214,10 +217,11 @@
 						<ExtendedTooltip name="ИнформационныеСообщенияУправлениеПоискомРасширеннаяПодсказка" id="66"/>
 					</SearchControlAddition>
 					<ChildItems>
-						<LabelField name="ИнформационныеСообщенияПериод" id="81">
-							<DataPath>~ИнформационныеСообщения.Период</DataPath>
-							<ContextMenu name="ИнформационныеСообщенияПериодКонтекстноеМеню" id="82"/>
-							<ExtendedTooltip name="ИнформационныеСообщенияПериодРасширеннаяПодсказка" id="83"/>
+						<LabelField name="ИнформационныеСообщенияПериод" id="93">
+							<DataPath>ИнформационныеСообщения.Период</DataPath>
+							<Width>5</Width>
+							<ContextMenu name="ИнформационныеСообщенияПериодКонтекстноеМеню" id="94"/>
+							<ExtendedTooltip name="ИнформационныеСообщенияПериодРасширеннаяПодсказка" id="95"/>
 						</LabelField>
 						<CheckBoxField name="ИнформационныеСообщенияОзнакомлен" id="87">
 							<DataPath>ИнформационныеСообщения.Ознакомлен</DataPath>
@@ -229,6 +233,11 @@
 							<DataPath>ИнформационныеСообщения.Идентификатор</DataPath>
 							<ContextMenu name="ИнформационныеСообщенияИдентификаторКонтекстноеМеню" id="91"/>
 							<ExtendedTooltip name="ИнформационныеСообщенияИдентификаторРасширеннаяПодсказка" id="92"/>
+						</LabelField>
+						<LabelField name="ИнформационныеСообщенияАвтор" id="96">
+							<DataPath>ИнформационныеСообщения.Автор</DataPath>
+							<ContextMenu name="ИнформационныеСообщенияАвторКонтекстноеМеню" id="97"/>
+							<ExtendedTooltip name="ИнформационныеСообщенияАвторРасширеннаяПодсказка" id="98"/>
 						</LabelField>
 					</ChildItems>
 				</Table>
@@ -301,12 +310,13 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	РегистрСведенийпропус_ИнформационныеСообщения.Идентификатор,
-	РегистрСведенийпропус_ИнформационныеСообщения.ГруппаПользователей,
-	РегистрСведенийпропус_ИнформационныеСообщения.Текст,
-	РегистрСведенийпропус_ИнформационныеСообщения.Ознакомлен,
-	РегистрСведенийпропус_ИнформационныеСообщения.Автор,
-	РегистрСведенийпропус_ИнформационныеСообщения.Контекст
+	РегистрСведенийпропус_ИнформационныеСообщения.Период КАК Период,
+	РегистрСведенийпропус_ИнформационныеСообщения.Идентификатор КАК Идентификатор,
+	РегистрСведенийпропус_ИнформационныеСообщения.ГруппаПользователей КАК ГруппаПользователей,
+	РегистрСведенийпропус_ИнформационныеСообщения.Текст КАК Текст,
+	РегистрСведенийпропус_ИнформационныеСообщения.Ознакомлен КАК Ознакомлен,
+	РегистрСведенийпропус_ИнформационныеСообщения.Автор КАК Автор,
+	РегистрСведенийпропус_ИнформационныеСообщения.Контекст КАК Контекст
 ИЗ
 	РегистрСведений.пропуск_ИнформационныеСообщения КАК РегистрСведенийпропус_ИнформационныеСообщения</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
@@ -332,6 +342,10 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Контекст</dcssch:dataPath>
 					<dcssch:field>Контекст</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Период</dcssch:dataPath>
+					<dcssch:field>Период</dcssch:field>
 				</Field>
 				<ListSettings>
 					<dcsset:filter>

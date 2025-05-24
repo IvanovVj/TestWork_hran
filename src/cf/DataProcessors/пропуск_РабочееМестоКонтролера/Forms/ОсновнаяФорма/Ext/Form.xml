@@ -53,7 +53,7 @@
 			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>СписокСотрудников</DataPath>
-			<RowPictureDataPath>~СписокСотрудников.DefaultPicture</RowPictureDataPath>
+			<RowPictureDataPath>СписокСотрудников.DefaultPicture</RowPictureDataPath>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -97,28 +97,28 @@
 			</SearchControlAddition>
 			<ChildItems>
 				<LabelField name="СписокСотрудниковпропуск_ИдентификаторПропуска" id="68">
-					<DataPath>~СписокСотрудников.пропуск_ИдентификаторПропуска</DataPath>
+					<DataPath>СписокСотрудников.пропуск_ИдентификаторПропуска</DataPath>
 					<ContextMenu name="СписокСотрудниковпропуск_ИдентификаторПропускаКонтекстноеМеню" id="69"/>
 					<ExtendedTooltip name="СписокСотрудниковпропуск_ИдентификаторПропускаРасширеннаяПодсказка" id="70"/>
 				</LabelField>
 				<LabelField name="СписокСотрудниковНаименование" id="47">
-					<DataPath>~СписокСотрудников.Description~СписокСотрудников.Наименование</DataPath>
+					<DataPath>СписокСотрудников.Description</DataPath>
 					<ContextMenu name="СписокСотрудниковНаименованиеКонтекстноеМеню" id="48"/>
 					<ExtendedTooltip name="СписокСотрудниковНаименованиеРасширеннаяПодсказка" id="49"/>
 				</LabelField>
 				<CheckBoxField name="СписокСотрудниковНедействителен" id="50">
-					<DataPath>~СписокСотрудников.Недействителен</DataPath>
+					<DataPath>СписокСотрудников.Недействителен</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="СписокСотрудниковНедействителенКонтекстноеМеню" id="51"/>
 					<ExtendedTooltip name="СписокСотрудниковНедействителенРасширеннаяПодсказка" id="52"/>
 				</CheckBoxField>
 				<LabelField name="СписокСотрудниковПодразделение" id="53">
-					<DataPath>~СписокСотрудников.Подразделение</DataPath>
+					<DataPath>СписокСотрудников.Подразделение</DataPath>
 					<ContextMenu name="СписокСотрудниковПодразделениеКонтекстноеМеню" id="54"/>
 					<ExtendedTooltip name="СписокСотрудниковПодразделениеРасширеннаяПодсказка" id="55"/>
 				</LabelField>
 				<LabelField name="СписокСотрудниковКомментарий" id="59">
-					<DataPath>~СписокСотрудников.Комментарий</DataPath>
+					<DataPath>СписокСотрудников.Комментарий</DataPath>
 					<Height>1</Height>
 					<ContextMenu name="СписокСотрудниковКомментарийКонтекстноеМеню" id="60"/>
 					<ExtendedTooltip name="СписокСотрудниковКомментарийРасширеннаяПодсказка" id="61"/>
@@ -331,7 +331,7 @@
 			</Type>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>true</DynamicDataRead>
+				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	РегистрСведенийпропус_ИнформационныеСообщения.Идентификатор,
 	РегистрСведенийпропус_ИнформационныеСообщения.ГруппаПользователей,
@@ -365,15 +365,6 @@
 					<dcssch:dataPath>Контекст</dcssch:dataPath>
 					<dcssch:field>Контекст</dcssch:field>
 				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Период</dcssch:dataPath>
-					<dcssch:field>Период</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Пользователь</dcssch:dataPath>
-					<dcssch:field>Пользователь</dcssch:field>
-				</Field>
-				<MainTable>1:b5e85e5c-5d28-4f57-a2a3-6068259a138b</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:item xsi:type="dcsset:FilterItemComparison">
@@ -414,7 +405,7 @@
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>false</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
-				<MainTable>1:579baaa4-6493-4d99-8744-6399757295c7</MainTable>
+				<MainTable>Catalog.Пользователи</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:item xsi:type="dcsset:FilterItemComparison">

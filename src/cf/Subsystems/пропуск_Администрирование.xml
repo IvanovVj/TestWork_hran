@@ -15,7 +15,20 @@
 			<UseOneCommand>false</UseOneCommand>
 			<Explanation/>
 			<Picture/>
-			<Content/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пропуск_ЖурналЛогирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пропуск_ИнформационныеСообщения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пропуск_ЖурналПосещений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.пропуск_ПомощникУчетаПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.пропуск_РабочееМестоКонтролера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.пропуск_ТипыСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.пропуск_СправочникПользователиПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пропуск_РаботаСПропусками</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пропуск_Логирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пропуск_ОбновлениеИнформационнойБазы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пропуск_ПодпискиНаСобытия</xr:Item>
+			</Content>
 		</Properties>
 		<ChildObjects/>
 	</Subsystem>

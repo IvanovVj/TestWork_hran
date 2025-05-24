@@ -15,7 +15,12 @@
 			<UseOneCommand>false</UseOneCommand>
 			<Explanation/>
 			<Picture/>
-			<Content/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.пропуск_ПомощникУчетаПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Пользователи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.пропуск_СправочникПользователиПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пропуск_ИнформационныеСообщения</xr:Item>
+			</Content>
 		</Properties>
 		<ChildObjects/>
 	</Subsystem>

@@ -15,7 +15,12 @@
 			<UseOneCommand>false</UseOneCommand>
 			<Explanation/>
 			<Picture/>
-			<Content/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.пропуск_РабочееМестоКонтролера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пропуск_ИнформационныеСообщения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.пропуск_ЖурналПосещений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.пропуск_РаботаСПропусками</xr:Item>
+			</Content>
 		</Properties>
 		<ChildObjects/>
 	</Subsystem>

@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.пропуск_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor/>
-			<Version/>
+			<Version>1.0.1.1</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -76,7 +76,9 @@
 			<CommonModule>пропуск_Логирование</CommonModule>
 			<CommonModule>пропуск_РаботаСПропусками</CommonModule>
 			<EventSubscription>пропуск_СправочникПользователиПриЗаписи</EventSubscription>
+			<DefinedType>Подразделение</DefinedType>
 			<Catalog>Пользователи</Catalog>
+			<Catalog>_ДемоПодразделения</Catalog>
 			<Enum>пропуск_ТипыСообщений</Enum>
 			<DataProcessor>пропуск_РабочееМестоКонтролера</DataProcessor>
 			<DataProcessor>пропуск_ПомощникУчетаПользователей</DataProcessor>

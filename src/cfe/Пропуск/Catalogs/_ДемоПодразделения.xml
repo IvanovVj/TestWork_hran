@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Catalog uuid="74083193-753c-4826-9a4d-28f56de458a6">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject._ДемоПодразделения" category="Object">
+				<xr:TypeId>f6ce1689-795f-40bf-95d4-dc7f4eafb311</xr:TypeId>
+				<xr:ValueId>2d3acc95-0266-4881-9ea8-fdee985d4ebe</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef._ДемоПодразделения" category="Ref">
+				<xr:TypeId>a2635da5-9858-433a-a570-bd7a611a469f</xr:TypeId>
+				<xr:ValueId>3c1c42eb-0327-49bb-98fe-bf29fd0cb7bc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection._ДемоПодразделения" category="Selection">
+				<xr:TypeId>14df1c0d-4ff1-4032-9a5e-246c055a43d2</xr:TypeId>
+				<xr:ValueId>8c0f3258-7989-4a9b-92c1-ea39f891c2f9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList._ДемоПодразделения" category="List">
+				<xr:TypeId>8875040e-eb22-4f0c-94d8-304fc96f3162</xr:TypeId>
+				<xr:ValueId>c8d04c5f-36b6-41b6-acf2-90f5649c7312</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager._ДемоПодразделения" category="Manager">
+				<xr:TypeId>2e88b3b1-be39-40f8-82f1-35f62ffb7241</xr:TypeId>
+				<xr:ValueId>1f54fd56-4d22-4e06-a359-a9aa65244f9f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>_ДемоПодразделения</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>f6ed8faa-4ca3-46f2-8813-815b11f8059f</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

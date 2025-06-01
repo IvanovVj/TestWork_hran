@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="СписокПользователей" id="1">
+			<TitleLocation>Top</TitleLocation>
+			<TitleHeight>1</TitleHeight>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>СписокПользователей</DataPath>
+			<RowPictureDataPath>СписокПользователей.DefaultPicture</RowPictureDataPath>
+			<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокПользователейКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокПользователейКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="СписокПользователейСоздать" id="37">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Item.СписокПользователей.StandardCommand.Create</CommandName>
+						<ExtendedTooltip name="СписокПользователейСоздатьРасширеннаяПодсказка" id="38"/>
+					</Button>
+					<Button name="СписокПользователейИзменить" id="35">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Item.СписокПользователей.StandardCommand.Change</CommandName>
+						<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="СписокПользователейИзменитьРасширеннаяПодсказка" id="36"/>
+					</Button>
+					<Button name="СписокПользователейСкопировать" id="39">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Item.СписокПользователей.StandardCommand.Copy</CommandName>
+						<ExtendedTooltip name="СписокПользователейСкопироватьРасширеннаяПодсказка" id="40"/>
+					</Button>
+					<Button name="ФормаКомандаСгенерироватьИдентификаторПропуска" id="44">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаСгенерироватьИдентификаторПропуска</CommandName>
+						<BackColor>style:ToolTipBackColor</BackColor>
+						<ExtendedTooltip name="ФормаКомандаСгенерироватьИдентификаторПропускаРасширеннаяПодсказка" id="45"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокПользователейРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СписокПользователейСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>СписокПользователей</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокПользователейСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СписокПользователейСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокПользователейСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>СписокПользователей</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокПользователейСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокПользователейСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокПользователейУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>СписокПользователей</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокПользователейУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокПользователейУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СписокПользователейпропуск_ИдентификаторПропуска" id="41">
+					<DataPath>СписокПользователей.пропуск_ИдентификаторПропуска</DataPath>
+					<ContextMenu name="СписокПользователейпропуск_ИдентификаторПропускаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="СписокПользователейпропуск_ИдентификаторПропускаРасширеннаяПодсказка" id="43"/>
+				</LabelField>
+				<LabelField name="СписокПользователейНаименование" id="14">
+					<DataPath>СписокПользователей.Description</DataPath>
+					<ContextMenu name="СписокПользователейНаименованиеКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СписокПользователейНаименованиеРасширеннаяПодсказка" id="16"/>
+				</LabelField>
+				<CheckBoxField name="СписокПользователейНедействителен" id="17">
+					<DataPath>СписокПользователей.Недействителен</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СписокПользователейНедействителенКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="СписокПользователейНедействителенРасширеннаяПодсказка" id="19"/>
+				</CheckBoxField>
+				<LabelField name="СписокПользователейПодразделение" id="20">
+					<DataPath>СписокПользователей.Подразделение</DataPath>
+					<ContextMenu name="СписокПользователейПодразделениеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="СписокПользователейПодразделениеРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<LabelField name="СписокПользователейКомментарий" id="26">
+					<DataPath>СписокПользователей.Комментарий</DataPath>
+					<Height>1</Height>
+					<ContextMenu name="СписокПользователейКомментарийКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СписокПользователейКомментарийРасширеннаяПодсказка" id="28"/>
+				</LabelField>
+				<LabelField name="СписокПользователейСсылка" id="46">
+					<DataPath>СписокПользователей.Ref</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="СписокПользователейСсылкаКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="СписокПользователейСсылкаРасширеннаяПодсказка" id="48"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаИС" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационные сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ИС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>PopUp</Behavior>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>None</Representation>
+			<ExtendedTooltip name="ГруппаИСРасширеннаяПодсказка" id="50"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьИнформационныеСообщения" id="51">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>2</Height>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информационные сообщения</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<BackColor>style:ToolTipBackColor</BackColor>
+					<ContextMenu name="НадписьИнформационныеСообщенияКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="НадписьИнформационныеСообщенияРасширеннаяПодсказка" id="53"/>
+				</LabelDecoration>
+				<Table name="ИнформационныеСообщения" id="54">
+					<Representation>List</Representation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>ИнформационныеСообщения</DataPath>
+					<RowPictureDataPath>~ИнформационныеСообщения.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+					<ContextMenu name="ИнформационныеСообщенияКонтекстноеМеню" id="55"/>
+					<AutoCommandBar name="ИнформационныеСообщенияКоманднаяПанель" id="56">
+						<ChildItems>
+							<Button name="ИнформационныеСообщенияОбновить" id="79">
+								<Type>CommandBarButton</Type>
+								<Representation>PictureAndText</Representation>
+								<CommandName>Form.Item.СписокПользователей.StandardCommand.Refresh</CommandName>
+								<Font bold="true" kind="AutoFont"/>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="ИнформационныеСообщенияОбновитьРасширеннаяПодсказка" id="80"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ИнформационныеСообщенияРасширеннаяПодсказка" id="57"/>
+					<SearchStringAddition name="ИнформационныеСообщенияСтрокаПоиска" id="58">
+						<AdditionSource>
+							<Item>ИнформационныеСообщения</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ИнформационныеСообщенияСтрокаПоискаКонтекстноеМеню" id="59"/>
+						<ExtendedTooltip name="ИнформационныеСообщенияСтрокаПоискаРасширеннаяПодсказка" id="60"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ИнформационныеСообщенияСостояниеПросмотра" id="61">
+						<AdditionSource>
+							<Item>ИнформационныеСообщения</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ИнформационныеСообщенияСостояниеПросмотраКонтекстноеМеню" id="62"/>
+						<ExtendedTooltip name="ИнформационныеСообщенияСостояниеПросмотраРасширеннаяПодсказка" id="63"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ИнформационныеСообщенияУправлениеПоиском" id="64">
+						<AdditionSource>
+							<Item>ИнформационныеСообщения</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ИнформационныеСообщенияУправлениеПоискомКонтекстноеМеню" id="65"/>
+						<ExtendedTooltip name="ИнформационныеСообщенияУправлениеПоискомРасширеннаяПодсказка" id="66"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ИнформационныеСообщенияПериод" id="93">
+							<DataPath>ИнформационныеСообщения.Период</DataPath>
+							<Width>5</Width>
+							<ContextMenu name="ИнформационныеСообщенияПериодКонтекстноеМеню" id="94"/>
+							<ExtendedTooltip name="ИнформационныеСообщенияПериодРасширеннаяПодсказка" id="95"/>
+						</LabelField>
+						<CheckBoxField name="ИнформационныеСообщенияОзнакомлен" id="87">
+							<DataPath>ИнформационныеСообщения.Ознакомлен</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИнформационныеСообщенияОзнакомленКонтекстноеМеню" id="88"/>
+							<ExtendedTooltip name="ИнформационныеСообщенияОзнакомленРасширеннаяПодсказка" id="89"/>
+						</CheckBoxField>
+						<LabelField name="ИнформационныеСообщенияИдентификатор" id="90">
+							<DataPath>ИнформационныеСообщения.Идентификатор</DataPath>
+							<ContextMenu name="ИнформационныеСообщенияИдентификаторКонтекстноеМеню" id="91"/>
+							<ExtendedTooltip name="ИнформационныеСообщенияИдентификаторРасширеннаяПодсказка" id="92"/>
+						</LabelField>
+						<LabelField name="ИнформационныеСообщенияАвтор" id="96">
+							<DataPath>ИнформационныеСообщения.Автор</DataPath>
+							<ContextMenu name="ИнформационныеСообщенияАвторКонтекстноеМеню" id="97"/>
+							<ExtendedTooltip name="ИнформационныеСообщенияАвторРасширеннаяПодсказка" id="98"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.пропуск_ПомощникУчетаПользователей</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокПользователей" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>СписокПользователей.Ref</Field>
+				<Field>СписокПользователей.пропуск_ИдентификаторПропуска</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Catalog.Пользователи</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Предопределенный</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Служебный</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ИнформационныеСообщения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационные сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийпропус_ИнформационныеСообщения.Период КАК Период,
+	РегистрСведенийпропус_ИнформационныеСообщения.Идентификатор КАК Идентификатор,
+	РегистрСведенийпропус_ИнформационныеСообщения.ГруппаПользователей КАК ГруппаПользователей,
+	РегистрСведенийпропус_ИнформационныеСообщения.Текст КАК Текст,
+	РегистрСведенийпропус_ИнформационныеСообщения.Ознакомлен КАК Ознакомлен,
+	РегистрСведенийпропус_ИнформационныеСообщения.Автор КАК Автор,
+	РегистрСведенийпропус_ИнформационныеСообщения.Контекст КАК Контекст
+ИЗ
+	РегистрСведений.пропуск_ИнформационныеСообщения КАК РегистрСведенийпропус_ИнформационныеСообщения</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Автор</dcssch:dataPath>
+					<dcssch:field>Автор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Идентификатор</dcssch:dataPath>
+					<dcssch:field>Идентификатор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ознакомлен</dcssch:dataPath>
+					<dcssch:field>Ознакомлен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ГруппаПользователей</dcssch:dataPath>
+					<dcssch:field>ГруппаПользователей</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Текст</dcssch:dataPath>
+					<dcssch:field>Текст</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Контекст</dcssch:dataPath>
+					<dcssch:field>Контекст</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Период</dcssch:dataPath>
+					<dcssch:field>Период</dcssch:field>
+				</Field>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">ГруппаПользователей</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.ГруппыПользователей.Операторы1С</dcsset:right>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Период</dcsset:field>
+							<dcsset:orderType>Desc</dcsset:orderType>
+						</dcsset:item>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ИнформационныеСообщения</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ИнформационныеСообщения.Ознакомлен</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ИнформационныеСообщения.ГруппаПользователей</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.ГруппыПользователей.ВсеПользователи</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаСгенерироватьИдентификаторПропуска" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать идентификатор пропуска</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать идентификатор пропуска</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаСгенерироватьИдентификаторПропуска</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

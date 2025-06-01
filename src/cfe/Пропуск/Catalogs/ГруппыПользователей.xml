@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Catalog uuid="148ab87b-7506-4cf1-a3d8-27eb0e1147b6">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ГруппыПользователей" category="Object">
+				<xr:TypeId>751f2109-2894-442a-9f8f-5b6edf00c75e</xr:TypeId>
+				<xr:ValueId>7cafb8de-b860-415b-b5ca-d72df707d832</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ГруппыПользователей" category="Ref">
+				<xr:TypeId>2a6699ad-de44-40de-9005-b5fd693d7af2</xr:TypeId>
+				<xr:ValueId>fbc17cc3-6a38-428c-9db9-50b8448c7776</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ГруппыПользователей" category="Selection">
+				<xr:TypeId>b62ae65f-d3a5-4a0d-89ef-9e22d5f7a601</xr:TypeId>
+				<xr:ValueId>9de0e552-1329-479c-99fa-0d6aa1af9103</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ГруппыПользователей" category="List">
+				<xr:TypeId>949c92e4-e9d3-410f-b405-fe1b0c38db0d</xr:TypeId>
+				<xr:ValueId>ba642920-50dc-45d3-b8fc-5b48f177286c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ГруппыПользователей" category="Manager">
+				<xr:TypeId>064623b1-e6c5-4f0d-bd2d-ead0a25108e7</xr:TypeId>
+				<xr:ValueId>54bf2d45-a1d3-4491-8424-7990f5f9919c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ГруппыПользователей</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>a2782760-dd4c-44d2-a785-814d6f610455</ExtendedConfigurationObject>
+			<Hierarchical>true</Hierarchical>
+			<CodeLength>0</CodeLength>
+			<CodeType>String</CodeType>
+			<CodeAllowedLength>Variable</CodeAllowedLength>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Catalog uuid="db628711-2973-4bb1-98c0-05f25568ce73">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.Пользователи" category="Object">
+				<xr:TypeId>d45f1a25-e1c2-417b-bc44-8638f5d09277</xr:TypeId>
+				<xr:ValueId>96a9c5f6-9288-4d5e-8626-581f8f9783bd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.Пользователи" category="Ref">
+				<xr:TypeId>6673c2d2-f998-4fe7-b54c-00338189592d</xr:TypeId>
+				<xr:ValueId>0c7e41d6-25ef-4b9e-8eaa-a85f34495aae</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.Пользователи" category="Selection">
+				<xr:TypeId>8752dda5-3c5d-43b1-b9cb-93e93e5bfbdb</xr:TypeId>
+				<xr:ValueId>924ada0e-36b2-4098-81dd-e5159815a2e3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.Пользователи" category="List">
+				<xr:TypeId>d9c67387-34fa-4810-a940-783f4d34f77f</xr:TypeId>
+				<xr:ValueId>5586d3c8-aca6-45dc-8fe2-8a6f365c0b7e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.Пользователи" category="Manager">
+				<xr:TypeId>6e421455-9872-498e-b651-9d8a7df9e607</xr:TypeId>
+				<xr:ValueId>a6c45eca-2f6e-4f5e-a93e-c49d8018ac21</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>Пользователи</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>579baaa4-6493-4d99-8744-6399757295c7</ExtendedConfigurationObject>
+			<DescriptionLength>100</DescriptionLength>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="53852157-d01b-4377-b509-fba5aa945d35">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>пропуск_ИдентификаторПропуска</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b8ef9c0e-79bc-442f-a950-bd5d1422cfa4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>18</v8:Length>
+							<v8:AllowedLength>Fixed</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="37dea64a-a84a-4ba4-9866-727f8eeeccb6">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Недействителен</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ae6d0e12-8857-476c-b4b2-f03295cbed3e</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="78a22294-c4d9-4dbd-a50b-d14385b5af0b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Подразделение</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>cc8e3172-491d-45d8-a7eb-fc6c400845cb</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.Подразделение</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="9732e156-2040-4a97-8e4b-8271ba34ad26">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Комментарий</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>7ee1e0d0-9735-45da-bd24-c0dbabfd5b1e</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="4c3a156f-35d9-4449-8fb5-22a7d43adf3e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Служебный</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>bd0e3bd4-1207-41ea-8dfc-afa8f7d08cc2</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e37a42f2-a894-4748-95bc-add07edbd346">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ФизическоеЛицо</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d7cfc87f-ac09-44aa-91d9-6511c408c5cb</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ФизическоеЛицо</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>
